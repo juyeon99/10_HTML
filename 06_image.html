@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        이미지를 삽입하기 위해 <img> 태그 사용
+        이미지 파일의 경로는 src라는 속성의 속성값으로 지정해주어야 하며
+        <img> 태그는 닫기 태그를 사용하지 X
+    -->
+    <h1>이미지 관련 태그</h1>
+    <img src="sample/image/cat.jpg" width="200" height="150">
+    <img src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2023/06/19/36134a68-a49b-41d5-9294-9a53397fbb5d.jpg" width="200">
+    <p>src 속성에 경로를 설정하여 이미지 파일을 불러온다.</p><br>
+    <hr>
+
+    <h2>자주 사용하는 속성들</h2>
+    <h3>alt 속성</h3>
+    <p>
+        사진의 경로가 잘못되거나 이미지를 제대로 표현할 수 없는 경우 대체 텍스트 용도로 사용
+    </p>
+    <img src="sample/image/bear.png" alt="곰 사진"><br>
+
+    <h3>width, height 속성</h3>
+    <pre>
+        사진의 높이와 너비 지정
+        고정된 단위의 크기로도 지정 가능, 가변크기 단위의 크기로도 지정 가능
+    </pre>
+
+    <h4>고정 크기 단위: 화면 사이즈가 줄어도 크기가 변하지 X</h4>
+    <img src="sample/image/bear.png" width="200px" height="250px">
+    <img src="sample/image/tiger.png" width="100" height="150">
+
+    <h4>가변 크기 단위: 화면 사이즈 혹은 기준에 따라 크기 변경</h4>
+    <img src="sample/image/bear.png" width="15%" height="250px">
+    <img src="sample/image/tiger.png" width="30%" height="150">
+    <hr>
+
+    <h2>정렬 float</h2>
+    <div>
+        <!-- 오른쪽 정렬 -->
+        <img src="sample/image/bear.png" width="150px" height="250px" style="float: right;">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium enim laboriosam voluptates praesentium accusantium commodi rerum voluptas rem doloremque magnam dicta reiciendis, incidunt magni, omnis quo expedita? Harum, ullam est?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium enim laboriosam voluptates praesentium accusantium commodi rerum voluptas rem doloremque magnam dicta reiciendis, incidunt magni, omnis quo expedita? Harum, ullam est?</p>
+    </div>
+
+    <div>
+        <!-- 왼쪽 정렬 -->
+        <img src="sample/image/tiger.png" width="150px" height="250px" style="float: left;">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium enim laboriosam voluptates praesentium accusantium commodi rerum voluptas rem doloremque magnam dicta reiciendis, incidunt magni, omnis quo expedita? Harum, ullam est?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium enim laboriosam voluptates praesentium accusantium commodi rerum voluptas rem doloremque magnam dicta reiciendis, incidunt magni, omnis quo expedita? Harum, ullam est?</p>
+    </div>
+</body>
+</html>
